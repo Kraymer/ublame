@@ -1,4 +1,4 @@
-boogit
+# boogit
 
 boogit is born from the frustration of using `git blame` to track the successive 
 editors of a code segment.
