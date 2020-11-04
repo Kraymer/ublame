@@ -30,7 +30,7 @@ So you need to apply `git blame` on the version of the file preceding e65d24b3 a
 With `boogit` the information is immediatley available in one command :
 
 ~~~
-❯ python boogit/__init__.py tests/rsrc/example.py "if token in diff"
+❯ boogit tests/rsrc/example.py "if token in diff"
 
 Commit: e65d24b336570822d33f91847542743969b17fa2
 Author: Fabrice Laporte
