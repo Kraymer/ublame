@@ -18,9 +18,15 @@ def print_commit_infos(commit):
     print(
         """
 Commit: {}
-Author: {}<{}>
-Date: {}""".format(
-            commit.hash, commit.author.name, commit.author.email, commit.committer_date
+Author: {} <{}>
+Date: {}
+
+\t{}""".format(
+            commit.hash,
+            commit.author.name,
+            commit.author.email,
+            commit.committer_date,
+            commit.msg,
         )
     )
 
