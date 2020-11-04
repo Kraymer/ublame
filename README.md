@@ -5,9 +5,9 @@ editors of a code segment.
 It performs a search on a file commits history and reports all the
 modified lines that contain searched term.
 
-The name is inspired from The Jackson's 1978 disco hit "Blame It on the Boogie".
+The name is inspired from The Jackson's 1978 disco hit _"Blame It on the Boogie"_.
 
-# Example
+## Example
 
 `git blame` can be of limited use when the last commit reported has no interest.
 A common case is having a monster commit that converts the indentation type :
