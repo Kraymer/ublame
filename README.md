@@ -1,6 +1,6 @@
 # boogit
 
-boogit is born from the frustration of using `git blame` to track the successive 
+`boogit` is born from the frustration of using `git blame` to track the successive 
 editors of a code segment.
 It performs a search on a file commits history and reports all the
 modified lines that contain searched term.
@@ -25,9 +25,9 @@ Date:   Wed Nov 4 21:51:32 2020 +0100
     chore: convert tabs to spaces
 ~~~
 
-So you need to apply `git blame` on the version of the file preceding e65d24b3 and so on ...
+So you need to apply `git blame` on the version of the file preceding _e65d24b3_ and so on ...
 
-With `boogit` the information is immediatley available in one command :
+With `boogit` the information is instantly available in one command :
 
 ~~~
 ❯ boogit tests/rsrc/example.py "if token in diff"
