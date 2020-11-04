@@ -74,7 +74,7 @@ def diff_commit(commit, token):
 @click.argument("filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
 @click.argument("token", nargs=1)
 def boogit_cli(filename, token):
-    repo_path = repo_path_for(filename)
+    repo_path = repo_path_for(os.path.abspath(filename))
     relative_filename = filename.split(repo_path)[-1].strip("/")
     repo = GitRepository(repo_path)
     ever_found = False
