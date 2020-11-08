@@ -1,10 +1,11 @@
 # Ublame
 
-![](https://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg)
+![Artist's rendering of the bathyscaphe Trieste -- britannica.com](https://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg)
 
  >   **/ˈublaːm(ə)/** :
  >   
- >   Portmanteau word from 
+ >   `git blame`with some depth.   
+ > Portmanteau word from :
  >   1. *u-boat*:  anglicised version of the German word U-Boot that refers to any submarine  
  >   2. *blame*: git command that annotate each line in a given file with information from the revision which last modified the line.
 
