@@ -1,5 +1,4 @@
-# Ublame 
-
+# Ublame
 
 ![](https://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg)
 
@@ -36,7 +35,6 @@ Date:   Wed Nov 4 21:51:32 2020 +0100
 In that example, the last commit modified the code only to convert tabs to spaces and previous commits 
 that were probably more interesting to get the original intention of the developer(s) are not captured
 by `git blame`.
-
 So you need to apply `git blame` on the version of the file preceding _e65d24b3_ and so on ...
 
 With `ublame` the information is instantly available in one command :
