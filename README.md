@@ -1,16 +1,24 @@
-# boogit
+# Ublame 
 
-`boogit` is born from the frustration of using `git blame` to track the successive 
-editors of a code segment.
+
+![](https://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg)
+
+ >   **/ˈublaːm(ə)/** :
+ >   
+ >   Portmanteau word from 
+ >   1. *u-boat*:  anglicised version of the German word U-Boot that refers to any submarine  
+ >   2. *blame*: git command that annotate each line in a given file with information from the revision which last modified the line.
+
+`ublame` is born from the frustration of using `git blame` to track the successive 
+editors of a code segment.  
 It performs a search on a file commits history and reports all the
-modified lines that contain searched term.
+revisions that contain searched term in their diffs.
 
-The name is inspired from The Jackson's 1978 disco hit _"Blame It on the Boogie"_.
 
-## Example
 
-`git blame` can be of limited use when the last commit reported has no interest.
-A common case is having a monster commit that converts the indentation type :
+## Example 
+
+The last modification is not always the information you need when you try to grasp a piece of code.
 
 ~~~
 ❯ git blame tests/rsrc/example.py | grep "if token in diff"
@@ -25,12 +33,16 @@ Date:   Wed Nov 4 21:51:32 2020 +0100
     chore: convert tabs to spaces
 ~~~
 
+In that example, the last commit modified the code only to convert tabs to spaces and previous commits 
+that were probably more interesting to get the original intention of the developer(s) are not captured
+by `git blame`.
+
 So you need to apply `git blame` on the version of the file preceding _e65d24b3_ and so on ...
 
-With `boogit` the information is instantly available in one command :
+With `ublame` the information is instantly available in one command :
 
 ~~~
-❯ boogit tests/rsrc/example.py "if token in diff"
+❯ ublame tests/rsrc/example.py "if token in diff"
 
 Commit: e65d24b336570822d33f91847542743969b17fa2
 Author: Fabrice Laporte
