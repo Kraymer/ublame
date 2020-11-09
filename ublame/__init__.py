@@ -13,8 +13,7 @@ term = blessed.Terminal()
 
 
 def print_commit_infos(commit):
-    """Print commit summary infos.
-    """
+    """Print commit summary infos."""
     print(
         """
 Commit: {}
@@ -32,8 +31,7 @@ Date: {}
 
 
 def repo_path_for(filename):
-    """Go up filename path and returns path of first repository met.
-    """
+    """Go up filename path and returns path of first repository met."""
     while filename:
         filename = os.path.dirname(filename)
         if os.path.exists(os.path.join(filename, ".git")):
@@ -41,8 +39,7 @@ def repo_path_for(filename):
 
 
 def trim_diff(diff, token, context=3):
-    """Keep only context surrounding searched token.
-    """
+    """Keep only context surrounding searched token."""
     if token in diff:
         LOC_BEFORE = LOC_AFTER = context
         lines = diff.split("\n")
@@ -51,16 +48,13 @@ def trim_diff(diff, token, context=3):
                 break
         if lines[index][0] not in ("+", "-"):
             return ""
-        import ipdb
-
-        ipdb.set_trace()
         return "\n".join(lines[max(index - LOC_BEFORE, 0) : index + LOC_AFTER + 1])
     return ""
 
 
 def diff_commit(commit, token):
     """Print diffs that contain token.
-       Return True if token is present in file.
+    Return True if token is present in file.
     """
     diffs = []
     found = False
@@ -79,7 +73,8 @@ def diff_commit(commit, token):
 
 
 @click.command(
-    context_settings=dict(help_option_names=["-h", "--help"]), help="Recursive blame",
+    context_settings=dict(help_option_names=["-h", "--help"]),
+    help="Recursive blame",
 )
 @click.argument("filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
 @click.argument("token", nargs=1)
