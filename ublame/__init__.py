@@ -3,7 +3,7 @@ import os
 import click
 from pydriller import RepositoryMining, GitRepository
 
-""" boogit: `git blame` over a file lifetime
+""" ublame: `git blame` over a file lifetime
     Search for edits on a given string in a file git history. 
 """
 
@@ -79,7 +79,7 @@ def diff_commit(commit, token):
 )
 @click.argument("filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
 @click.argument("token", nargs=1)
-def boogit_cli(filename, token):
+def ublame_cli(filename, token):
     repo_path = repo_path_for(os.path.abspath(filename))
     relative_filename = filename.split(repo_path)[-1].strip("/")
     repo = GitRepository(repo_path)
@@ -98,4 +98,4 @@ def boogit_cli(filename, token):
 
 
 if __name__ == "__main__":
-    boogit_cli()
+    ublame_cli()
