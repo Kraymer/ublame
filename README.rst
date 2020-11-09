@@ -1,3 +1,15 @@
+.. image:: https://travis-ci.org/Kraymer/ublame.svg?branch=master 
+   :target: https://travis-ci.org/Kraymer/ublame 
+   
+.. image:: https://coveralls.io/repos/github/Kraymer/ublame/badge.svg?branch=master
+   :target: https://coveralls.io/github/Kraymer/ublame?branch=master
+
+.. image:: https://img.shields.io/github/v/release/kraymer/ublame.svg
+   :target: https://github.com/Kraymer/ublame/releases
+   
+.. image:: https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4
+   :target: https://www.patreon.com/kraymer
+
 Ublame
 ======
 
