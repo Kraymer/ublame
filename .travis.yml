@@ -1,7 +1,7 @@
 language: python
 
 env:
-  - TOX_ENV=py27
+  - TOX_ENV=py36
   - TOX_ENV=cov COVERAGE=1
 
 before_install:
