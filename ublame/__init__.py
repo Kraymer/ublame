@@ -40,18 +40,22 @@ def repo_path_for(filename):
             return filename
 
 
-def trim_diff(diff, token):
+def trim_diff(diff, token, context=3):
     """Keep only context surrounding searched token.
     """
     if token in diff:
-        LOC_BEFORE = LOC_AFTER = 3
+        LOC_BEFORE = LOC_AFTER = context
         lines = diff.split("\n")
         for index, line in enumerate(lines):
             if token in line:
                 break
         if lines[index][0] not in ("+", "-"):
-            return
-        return "\n".join(lines[max(index - LOC_BEFORE, 0) : index + LOC_AFTER])
+            return ""
+        import ipdb
+
+        ipdb.set_trace()
+        return "\n".join(lines[max(index - LOC_BEFORE, 0) : index + LOC_AFTER + 1])
+    return ""
 
 
 def diff_commit(commit, token):
