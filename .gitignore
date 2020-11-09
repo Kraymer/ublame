@@ -2,3 +2,5 @@
 .envrc
 __pycache__
 *.pyc
+.tox
+*.egg-info/
