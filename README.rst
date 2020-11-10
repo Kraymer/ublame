@@ -24,6 +24,13 @@ Ublame
     | 1. *u-boat*: anglicised version of the German word U-Boot that refers to any submarine  
     | 2. *blame*: git command that annotate each line in a given file with information from the revision which last modified the line.
 
+Install
+-------
+
+cronicle is written for Python 3.6+ and is tested on Linux.
+
+Install with pip via ``pip3 install ublame`` command.
+
 Why
 ---
 
@@ -90,3 +97,8 @@ With ``ublame`` the information is instantly available in one command :
     +       if token in diff:
     +               LOC_BEFORE = LOC_AFTER = 3
     +       lines = diff.split("\n")
+
+Screenshot
+----------
+
+.. figure:: https://github.com/Kraymer/public/blob/master/ublame_screenshot.png?raw=true
