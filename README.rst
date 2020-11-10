@@ -13,10 +13,9 @@
 Ublame
 ======
 
-.. figure:: https://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg
-   :alt: Artist's rendering of the bathyscaphe Trieste -- britannica.com
+.. image:: http://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg
 
-   *Artist's rendering of the bathyscaphe Trieste -- britannica.com*
+*Artist's rendering of the bathyscaphe Trieste -- britannica.com*
 
     **/ˈublaːm(ə)/** :
 
