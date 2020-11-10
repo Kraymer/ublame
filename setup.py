@@ -45,18 +45,10 @@ setup(
     url="https://github.com/KraYmer/ublame",
     license="MIT",
     platforms="ALL",
-    packages=[
-        "ublame",
-    ],
-    entry_points={"console_scripts": ["ublamee = ublame:ublame_cli"]},
+    packages=["ublame",],
+    entry_points={"console_scripts": ["ublame = ublame:ublame_cli"]},
     install_requires=read_rsrc("requirements.txt").split("\n"),
-    extras_require={
-        "test": [
-            "coverage>=5,<6",
-            "nose>1.3",
-            "tox>=3",
-        ]
-    },
+    extras_require={"test": ["coverage>=5,<6", "nose>1.3", "tox>=3",]},
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
