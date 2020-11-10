@@ -21,15 +21,15 @@ Ublame
     **/ˈublaːm(ə)/** :
 
     | ``git blame``\ with some depth.
-    | Portmanteau word from : 1. *u-boat*: anglicised version of the
-      German word U-Boot that refers to any submarine
-    | 2. *blame*: git command that annotate each line in a given file
-      with information from the revision which last modified the line.
+    |
+    | Portmanteau word from : 
+    |
+    | 1. *u-boat*: anglicised version of the German word U-Boot that refers to any submarine
+    |
+    | 2. *blame*: git command that annotate each line in a given file with information from the revision which last modified the line.
 
-| ``ublame`` is born from the frustration of using ``git blame`` to
-  track the successive editors of a code segment.
-| It performs a search on a file commits history and reports all the
-  revisions that contain searched term in their diffs.
+``ublame`` is born from the frustration of using ``git blame`` to track the successive editors of a code segment.
+It performs a search on a file commits history and reports all the revisions that contain searched term in their diffs.
 
 Example
 -------
