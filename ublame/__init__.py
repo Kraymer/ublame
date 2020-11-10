@@ -73,20 +73,20 @@ def diff_commit(commit, token):
 
 
 @click.command(
-    context_settings=dict(help_option_names=["-h", "--help"]),
-    help="Recursive blame",
+    context_settings=dict(help_option_names=["-h", "--help"]), help="Recursive blame",
 )
 @click.argument("filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
 @click.argument("token", nargs=1)
 def ublame_cli(filename, token):
-    repo_path = repo_path_for(os.path.abspath(filename))
+    filename = os.path.abspath(filename)
+    repo_path = repo_path_for(filename)
     relative_filename = filename.split(repo_path)[-1].strip("/")
     repo = GitRepository(repo_path)
     ever_found = False
+
     for commit_hash in repo.get_commits_modified_file(relative_filename):
         commit = repo.get_commit(commit_hash)
         found = diff_commit(commit, token)
-
         ever_found |= found
 
         if ever_found and not found:
