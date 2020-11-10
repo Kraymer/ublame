@@ -7,7 +7,7 @@ from pydriller import RepositoryMining, GitRepository
     Search for edits on a given string in a file git history. 
 """
 
-__version__ = "0.0.1"
+__version__ = "0.1.0"
 
 term = blessed.Terminal()
 
