@@ -27,7 +27,7 @@ Ublame
 Install
 -------
 
-cronicle is written for Python 3.6+ and is tested on Linux.
+Ublame is written for Python 3.6+ and is tested on Linux.
 
 Install with pip via ``pip3 install ublame`` command.
 
