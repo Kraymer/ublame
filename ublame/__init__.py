@@ -1,10 +1,10 @@
 import blessed
 import os
 import click
-from pydriller import RepositoryMining, GitRepository
+from pydriller import GitRepository
 
 """ ublame: `git blame` over a file lifetime
-    Search for edits on a given string in a file git history. 
+    Search for edits on a given string in a file git history.
 """
 
 __version__ = "0.1.0"
@@ -48,7 +48,7 @@ def trim_diff(diff, token, context=3):
                 break
         if lines[index][0] not in ("+", "-"):
             return ""
-        return "\n".join(lines[max(index - LOC_BEFORE, 0) : index + LOC_AFTER + 1])
+        return "\n".join(lines[max(index - LOC_BEFORE, 0): index + LOC_AFTER + 1])
     return ""
 
 
@@ -75,8 +75,8 @@ def diff_commit(commit, token):
 @click.command(
     context_settings=dict(help_option_names=["-h", "--help"]), help="Recursive blame",
 )
-@click.argument("filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
-@click.argument("token", nargs=1)
+@click.argument("-f", "filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
+@click.argument("-t", "token", nargs=1)
 def ublame_cli(filename, token):
     filename = os.path.abspath(filename)
     repo_path = repo_path_for(filename)
