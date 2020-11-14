@@ -1,6 +1,12 @@
-import blessed
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
+
+import blessed
 import click
+import click_log
+import logging
 from pydriller import GitRepository
 
 """ ublame: `git blame` over a file lifetime
@@ -10,6 +16,8 @@ from pydriller import GitRepository
 __version__ = "0.1.0"
 
 term = blessed.Terminal()
+logger = logging.getLogger(__name__)
+click_log.basic_config(logger)
 
 
 def print_commit_infos(commit):
@@ -75,9 +83,16 @@ def diff_commit(commit, token):
 @click.command(
     context_settings=dict(help_option_names=["-h", "--help"]), help="Recursive blame",
 )
-@click.argument("-f", "filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
-@click.argument("-t", "token", nargs=1)
-def ublame_cli(filename, token):
+@click.option("-f", "--filename", type=click.Path(exists=True), metavar="FILE", nargs=1)
+@click.option("-n", "--linenum", nargs=1)
+@click.option("-t", "--token", nargs=1)
+@click.version_option(__version__)
+@click.pass_context
+def ublame_cli(ctx, filename, linenum, token):
+    if not (linenum or token):
+        click.echo(ctx.get_help() + "\n")
+        logger.error("Please set one of --linenum or --token option")
+        exit(1)
     filename = os.path.abspath(filename)
     repo_path = repo_path_for(filename)
     relative_filename = filename.split(repo_path)[-1].strip("/")
