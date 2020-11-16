@@ -10,6 +10,9 @@
 .. image:: https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4
    :target: https://www.patreon.com/kraymer
 
+..
+    $pypi-body$
+    
 Ublame
 ======
 
