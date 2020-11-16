@@ -29,5 +29,5 @@ class ConfigTest(unittest.TestCase):
 
     def test_trim_diff_found(self):
         self.assertEquals(
-            trim_diff(LINES, "token", 2), "\n".join(LINES.split("\n")[11:16])
+            trim_diff(LINES, ("token",), 2), "\n".join(LINES.split("\n")[11:16])
         )
