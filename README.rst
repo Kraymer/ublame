@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.com/Kraymer/ublame.svg
-   :target: https://travis-ci.com/Kraymer/ublame
+.. image:: http://travis-ci.com/Kraymer/ublame.svg
+   :target: http://travis-ci.com/Kraymer/ublame
    
 .. image:: https://coveralls.io/repos/github/Kraymer/ublame/badge.svg?branch=main
    :target: https://coveralls.io/github/Kraymer/ublame
