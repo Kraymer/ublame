@@ -4,11 +4,9 @@
 .. image:: https://coveralls.io/repos/github/Kraymer/ublame/badge.svg?branch=main
    :target: https://coveralls.io/github/Kraymer/ublame
 
-.. image:: https://img.shields.io/github/v/release/kraymer/ublame.svg
-   :target: https://github.com/Kraymer/ublame/releases
+.. image:: https://img.shields.io/pypi/v/ublame.svg
+   :target: https://pypi.python.org/pypi/ublame
    
-.. image:: https://img.shields.io/badge/-%E2%99%A1%20Donate%20-ff69b4
-   :target: https://www.patreon.com/kraymer
 
 ..
     $pypi-body$
