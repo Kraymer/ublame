@@ -8,9 +8,6 @@
    :target: https://pypi.python.org/pypi/ublame
    
 
-..
-    $pypi-body$
-    
 Ublame
 ======
 
