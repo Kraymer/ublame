@@ -1,12 +1,11 @@
 .. image:: http://travis-ci.com/Kraymer/ublame.svg
    :target: http://travis-ci.com/Kraymer/ublame
-   
 .. image:: https://coveralls.io/repos/github/Kraymer/ublame/badge.svg?branch=main
    :target: https://coveralls.io/github/Kraymer/ublame
-
 .. image:: https://img.shields.io/pypi/v/ublame.svg
    :target: https://pypi.python.org/pypi/ublame
-   
+.. image:: https://pepy.tech/badge/ublame  
+   :target: https://pepy.tech/project/ublame
 
 Ublame
 ======
