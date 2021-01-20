@@ -36,7 +36,7 @@ It performs a search on a file commits history and reports all the revisions tha
 
 See SO question `Git blame — prior commits? <https://stackoverflow.com/questions/5098256/git-blame-prior-commits/>`_
 
-.. figure:: https://github.com/Kraymer/public/blob/master/ublame_why.png?raw=true
+.. figure:: https://raw.githubusercontent.com/Kraymer/ublame/main/docs/ublame_why.png
 
 Example
 -------
@@ -98,4 +98,4 @@ With ``ublame`` the information is instantly available in one command :
 Screenshot
 ----------
 
-.. figure:: https://github.com/Kraymer/public/blob/master/ublame_screenshot.png?raw=true
+.. figure:: https://raw.githubusercontent.com/Kraymer/ublame/main/docs/ublame_screenshot.png
