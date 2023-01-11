@@ -1,5 +1,3 @@
-.. image:: http://travis-ci.com/Kraymer/ublame.svg
-   :target: http://travis-ci.com/Kraymer/ublame
 .. image:: https://coveralls.io/repos/github/Kraymer/ublame/badge.svg?branch=main
    :target: https://coveralls.io/github/Kraymer/ublame
 .. image:: https://img.shields.io/pypi/v/ublame.svg
@@ -10,7 +8,7 @@
 Ublame
 ======
 
-.. image:: http://media1.britannica.com/eb-media/81/161281-004-F4CE9CF0.jpg
+.. image:: https://github.com/Kraymer/__pub/raw/master/ublame.jpg
 
 *Artist's rendering of the bathyscaphe Trieste -- britannica.com*
 
